@@ -1,0 +1,28 @@
+<div class="container mt-5 login-container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h3>Login</h3>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+                <div class="row mb-2">
+                    <div class="col-md">
+                        <input type="text" class="form-control" placeholder="Enter your email" formControlName="emailId">
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md">
+                        <input type="password" class="form-control" placeholder="Enter your password" formControlName="password">
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
